@@ -1,0 +1,33 @@
+.code_inputs {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    direction: ltr;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+
+    input {
+        max-width: 75px;
+        height: 75px;
+        background-color: #f6f6f6;
+        text-align: center;
+        font-size: 1.3rem;
+        border: 1px solid #f6f6f6;
+        color: #03014C;
+        transition: all .3s linear;
+        border-radius: 5px;
+
+        &:focus {
+            border: 1px solid #0060df;
+            background-color: #fff;
+        }
+    }
+
+    @media(max-width:1200px) {
+        .input_wrapper {
+            width: calc(100%/4);
+        }
+    }
+
+}

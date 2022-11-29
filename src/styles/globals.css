@@ -1,0 +1,201 @@
+:root {
+  --default-color: #000;
+  --secondary-color: #ffc803;
+  --grey-color: #f7f7f7;
+  --hover-color: #c64200;
+  --invalid-color: #e24c4c;
+  --light-secondary: #fadbcc;
+  --default-zIndex: 10;
+  --align-text: right;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Capriola", -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cairo", "Capriola", Helvetica Neue, sans-serif;
+}
+.embla {
+  overflow: hidden;
+  position: relative;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.embla__viewport {
+  overflow: hidden;
+  width: 100%;
+  height: 80vh;
+  max-height: 80vh;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: -10px;
+  min-height: 100%;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  position: relative;
+}
+.embla__slide__inner {
+  position: relative;
+  overflow: hidden;
+  height: 190px;
+}
+.embla__slide img {
+  object-fit: cover;
+}
+.embla__slide__img {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: none;
+  transform: translate(-50%, -50%);
+}
+
+.embla__button {
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--secondary-color);
+  padding: 0;
+}
+
+.embla__button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.embla__button__svg {
+  width: 100%;
+  height: 100%;
+}
+
+.embla__button--prev {
+  left: 60px;
+}
+
+.embla__button--next {
+  right: 60px;
+}
+
+.embla__viewport.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__viewport.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__container {
+  display: flex;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  margin-left: -10px;
+}
+
+.embla__button {
+  outline: 0;
+  cursor: pointer;
+  background-color: transparent;
+  touch-action: manipulation;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  width: 30px;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  fill: var(--secondary-color);
+  padding: 0;
+}
+
+.embla__button:disabled {
+  cursor: default;
+  opacity: 0.3;
+}
+
+.embla__button__svg {
+  width: 100%;
+  height: 100%;
+}
+.embla-header-wrapper {
+  min-height: 80vh;
+  position: relative;
+}
+
+@media (max-width: 600px) {
+  .embla__button--prev {
+    left: 27px;
+  }
+
+  .embla__button--next {
+    right: 27px;
+  }
+}
+
+.grey-bg {
+  background-color: var(--grey-color);
+}
+.white-bg {
+  background-color: #fff;
+}
+.category-card:hover img {
+  transform: scale(1.1);
+  box-shadow: 0 0 14px 1px #ccc;
+}
+.settings-wrapper .active svg {
+  display: none;
+}
+
+.MuiTextField-root {
+  background-color: #f8f8f8;
+}
+.MuiTextField-root:focus {
+  background-color: #fff;
+}

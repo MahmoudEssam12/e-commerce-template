@@ -1,0 +1,11 @@
+.imgs img {
+    flex-basis: 50%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 1px #ccc;
+    object-fit: cover;
+}
+
+.singleOrderImg img {
+    width: 100%;
+    height: 100%;
+}

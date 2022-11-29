@@ -1,0 +1,32 @@
+{
+  "name": "e-commerce3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.10.14",
+    "@mui/material": "^5.10.14",
+    "embla-carousel-autoplay": "^7.0.5",
+    "embla-carousel-react": "^7.0.5",
+    "framer-motion": "^7.6.12",
+    "next": "13.0.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "sharp": "^0.31.2",
+    "styled-components": "^5.3.6",
+    "stylis": "^4.1.3",
+    "stylis-plugin-rtl": "^2.1.1"
+  },
+  "devDependencies": {
+    "@styled-jsx/plugin-sass": "^4.0.2",
+    "babel-plugin-styled-components": "^2.0.7",
+    "sass": "^1.56.1"
+  }
+}
