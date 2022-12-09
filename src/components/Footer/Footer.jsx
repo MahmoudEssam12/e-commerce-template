@@ -2,6 +2,7 @@ import { Container } from "@mui/material";
 import React from "react";
 import TextField from "@mui/material/TextField";
 import Button from "@mui/material/Button";
+import Link from "next/link";
 
 function Footer() {
   const [value, setValue] = React.useState("Controlled");
@@ -52,9 +53,15 @@ function Footer() {
           </div>
           <div className="col">
             <ul>
-              <li className="active">الرئيسية</li>
-              <li>المفضلة</li>
-              <li>الإعدادات</li>
+              <li className="active">
+                <Link href="/">الرئيسية</Link>
+              </li>
+              <li>
+                <Link href="/favourits">المفضلة</Link>
+              </li>
+              <li>
+                <Link href="/settings">الإعدادات</Link>
+              </li>
             </ul>
           </div>
         </div>
@@ -107,18 +114,6 @@ function Footer() {
               font-weight: 600;
               font-family: "cairo";
               text-align: center;
-              &.active {
-                &::after {
-                  content: "";
-                  position: absolute;
-                  bottom: 0;
-                  left: 0;
-                  width: 100%;
-                  height: 2px;
-                  border-radius: 5px;
-                  background-color: var(--secondary-color);
-                }
-              }
             }
           }
         `}

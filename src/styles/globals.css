@@ -199,3 +199,6 @@ h6 {
 .MuiTextField-root:focus {
   background-color: #fff;
 }
+td {
+  font-size: 1.2rem;
+}

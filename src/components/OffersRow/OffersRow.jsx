@@ -8,10 +8,10 @@ function OffersRow() {
       <Container maxWidth="lg">
         <DividerText title="العروض" />
         <div className="offers-row">
-          <OfferCard name="نظارات" imgNum={1} />
-          <OfferCard name="نظارات" imgNum={1} />
-          <OfferCard name="نظارات" imgNum={1} />
-          <OfferCard name="نظارات" imgNum={1} />
+          <OfferCard name="نظglassارات" imgNum={1} id={1} />
+          <OfferCard name="نظارات" imgNum={1} id={2} />
+          <OfferCard name="نظارات" imgNum={1} id={3} />
+          <OfferCard name="نظارات" imgNum={1} id={4} />
         </div>
       </Container>
 

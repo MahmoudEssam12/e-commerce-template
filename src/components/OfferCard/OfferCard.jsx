@@ -7,10 +7,10 @@ import Rating from "@mui/material/Rating";
 import Button from "@mui/material/Button";
 import Link from "next/link";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
-function OfferCard({ name, imgNum }) {
+function OfferCard({ name, imgNum, id }) {
   return (
     <div className="offer-card">
-      <Link href={`/products/${name}`}>
+      <Link href={`/product/${id}`}>
         <div className="img-wrapper">
           <Image
             src={`/images/category ${imgNum}.png`}
